@@ -86,8 +86,6 @@ button:hover {
   background-color: var(--soft-magenta);
 }
 
-
-
 footer {
   width: 100%;
   margin-top: 40px;
@@ -130,5 +128,58 @@ footer {
 
 
 @media (min-width: 900px) {
+
+  body {
+    background-image: url(./images/bg-desktop.svg);
+    background-size: contain;
+    ;
+  }
+
+  .container {
+    width: 1000px;
+    height: 650px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10% 40% 40% 10%;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+  }
+
+  header {
+    margin: unset;
+  }
+  
+  .image-devices {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+
+  .description {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    margin: unset;
+    text-align: left;
+    justify-content: left;
+  }
+
+  .description h1 {
+    font-size: 3.8rem;
+  }
+
+  button {
+    align-self: flex-start;
+    width: 40%;
+  }
+
+  footer {
+    grid-column-start: 2;
+    grid-row-start: 4;
+    margin: unset;
+    justify-content: flex-end;
+    width: 90%;
+  }
 
 }
