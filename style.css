@@ -131,16 +131,15 @@ footer {
 
   body {
     background-image: url(./images/bg-desktop.svg);
-    background-size: contain;
-    ;
+    background-size: 100%;
   }
 
   .container {
     width: 1000px;
-    height: 650px;
+    height: 550px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 10% 40% 40% 10%;
+    grid-template-columns: 1.1fr 0.9fr;
+    grid-template-rows: 10% 80% 10%;
     align-items: center;
     justify-content: center;
     column-gap: 30px;
@@ -148,6 +147,7 @@ footer {
 
   header {
     margin: unset;
+    align-self: flex-end;
   }
   
   .image-devices {
@@ -163,20 +163,27 @@ footer {
     margin: unset;
     text-align: left;
     justify-content: left;
+    margin-bottom: 130px;
   }
 
   .description h1 {
-    font-size: 3.8rem;
+    font-size: 3rem;
+    padding-right: 100px;
+  }
+
+  .description p {
+    font-size: 1.5rem;
   }
 
   button {
     align-self: flex-start;
     width: 40%;
+    margin: 15px 0;
   }
 
   footer {
     grid-column-start: 2;
-    grid-row-start: 4;
+    grid-row-start: 3;
     margin: unset;
     justify-content: flex-end;
     width: 90%;
